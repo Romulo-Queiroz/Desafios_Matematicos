@@ -1,0 +1,66 @@
+print("Seja Bem vindo\n")
+nome=input("Digite seu nome: ")
+while nome == "":
+    print("Você nao me disse seu nome, nem apelido :/ ")
+    nome=input("Digite seu nome: ")
+print()
+
+print(f"Olá {nome} agora vamos para os desafios")
+print()
+#   inicio dos DESAFIOS
+desafio1 = int(input("DESAFIO 1: Me diz quanto é vinte e "
+                     "cinco multiplicado por cinco: "))
+#DESAFIO 1 AQUI:
+while desafio1 != 125:
+    print("Tente novamente, você consegue!")
+    desafio1 = int(input("DESAFIO 1: Me diz quando é "
+                         "vinte e cinco multiplicado por cinco: "))
+if desafio1 == 125:
+    print("Você acertou e ganhou +1 ponto")
+pontos = 1
+
+#DESAFIO 2 AQUI:
+desafio2 = int(input("DESAFIO 2:Qual o valor de (A) elevado a"
+                     " quinta potência?(Quando A vale 1 )"))
+
+while desafio2 != 1:
+    print("Tente novamente, você consegue!")
+    desafio2 = float(input("DESAFIO 2: Qual o valor de (A) "
+                           "elevado a quinta potência?(Quando A vale 1 )"))
+if desafio2 == 1:
+    pontos = pontos+1
+    print("BOA, um elevado a qualquer número é ele mesmo.")
+    print(f"Você ja acumulou {pontos} pontos!")
+print()
+print("DESAFIO 3: Sabendo que (A) é = 2,5, (B) 6,5, (C) 8,5."
+                " Qual seria o valor de (D) seguindo a lógica,\n"
+                     " mas agora retirando 10,0? ")
+
+#DESAFIO3 AQUI
+
+opcao1=int(input("[OPÇAO1]O valor de (D) é igual ao valor (A);\n"+
+                 "[OPÇÃO2]O valor de (D) é igual a 12,5;\n"+
+                 "[OPÇÃO3]O valor de (D) é igual a 10,0;\n"+
+                 "[OPÇAO4]O valor de (D) é igual a 3,0;\n"+
+                 "[[RESPONDA COM 1, 2, 3 OU 4]]: "))
+while opcao1!= 1:
+    print("Tente novamente, você consegue!")
+    opcao1 = int(input("[OPÇAO1]O valor de (D) é igual ao valor (A);\n" +
+                       "[OPÇÃO2]O valor de (D) é igual a 12,5;\n" +
+                       "[OPÇÃO3]O valor de (D) é igual a 10,0;\n" +
+                       "[OPÇAO4]O valor de (D) é igual a 3,0;\n" +
+                       "[[RESPONDA COM 1, 2, 3 OU 4]]: "))
+if opcao1==1:
+    pontos=pontos+1
+    print(f"Parabéns você conseguiu mais um [DESAFIO]\n"
+          f"Agora possui{pontos} pontos")
+
+#DESAFIO 4 AQUI:
+
+print("Agora respire fundo... \n")
+print("Caso não acerte o [DESAFIO 4 ] você voltará para o [DESAFIO 1]\n"
+      " com 0 pontos :/ \n")
+
+
+
+
